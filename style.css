@@ -1,0 +1,115 @@
+
+body{
+    padding: 200px;
+}
+.firstcontainer{
+    background-color: rgb(239, 243, 242);
+    padding: 10px 20px;
+}
+.navbar{
+   display: flex; 
+   gap: 10%;
+}
+.skill{
+    color: red;
+}
+.hero{
+    color: black;
+}
+.firstbutton{
+    border: solid 2px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    color: red;
+    
+}
+.upgrade{
+    color: grey;
+}
+.secondbutton{
+    border: solid 2px;
+    border-color: red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+}
+.input{
+    border: solid 2px;
+    padding: 20px 100px;
+    width: 30%;
+    border-radius: 40px ;
+    background-color: rgb(250, 241, 241);
+    border-color: rgb(211, 203, 203);
+}
+.thirdbutton{
+    border-radius: 30px;
+    border-color: rgb(253, 109, 109);
+    padding: 20px 20px;
+    background-color: rgb(243, 94, 94);
+    color: white;
+     margin-left: -100px;
+    margin-top: -22px;
+}
+.container{
+    display: flex;
+    gap: 10%;
+}
+.man{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer{
+    color: grey;
+    gap: 500%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 30px;
+}
+
+@media only screen and (min-width:280px) and (max-width:480px){
+
+.firstcontainer{
+    display: block;
+}
+.navbar{
+    display: block;
+   }   
+.input{
+    padding: 5px;
+}
+.container{
+    display: block;
+}
+
+.footer{
+    display: block;
+}
+.firstbutton{
+    border: solid 2px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    color: red;
+    
+}
+input{
+    border: solid 2px;
+    padding: 10px 50px;
+    width: 30%;
+    border-radius: 40px ;
+    background-color: rgb(250, 241, 241);
+    border-color: rgb(211, 203, 203);
+}
+.thirdbutton{
+    border-radius: 30px;
+    border-color: rgb(253, 109, 109);
+    padding: 10px 10px;
+    background-color: rgb(243, 94, 94);
+    color: white;
+     margin-left: -100px;
+    margin-top: -22px;
+}
+}
