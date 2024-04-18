@@ -11,14 +11,28 @@
     <div class="firstcontainer">
     <div class="navbar">
         <div class="skill">
-            <i class="fa-solid fa-user-graduate" ></i> <a class="hero">SKILL<a class="skill">Hero</a></a>
+            <i class="fa-solid fa-user-graduate" ></i> <a class="hero">SKILL<a class="firstskill">HERO</a></a>
         </div>
-        <a class="skill">Home</a>
-        <a>Programs</a>
-        <a>About Us</a>
-        <a>Contact</a>
-        <button class="firstbutton">Login</button>     <button class="secondbutton">Join Now</button>
+        <a class="skill" href="">Home .</a>
+        <a href="" class="upgrade">Programs</a>
+        <a href="" class="upgrade">About Us</a>
+        <a href="" class="upgrade">Contact</a>
+        <button class="firstbutton">Login</button><button class="secondbutton">Join Now</button>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("navbar");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        
     <div class="container">
         <div>
             <h1>Upgrade Your
@@ -27,20 +41,21 @@
             <p class="upgrade">Don't let your strength be defeated,
             <br>Explore the hidden skills within you!</p>
             <div>
-                <input type="looking" name="sentence" placeholder="what skills are you looking for" class="input">
+                <input type="text" name="text" placeholder="what skills are you looking for" class="input">
                 <button class="thirdbutton">Explore Now</button>
             </div>
         </div>
         <div>
-            <img src="pics/red tie.jpg" width="350px" height="350px" class="man" >
+            <img src="pics/red tie.jpg"class="image" >
         </div>
     </div>
     </div>
-    <div class="footer">
-        <i class="fa-brands fa-microsoft"></i>
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-medium"></i>
-        <i class="fa-brands fa-slack"></i>
+    <div class="skillhero-logos">
+        <h1><i class="fa-brands fa-microsoft"></i> Microsoft</h1>
+        <h1>Google</h1>
+        <h1>Medium</h1>
+        <h1>Udemy</h1>
+        <h1><i class="fa-brands fa-slack"></i>Slack</h1>
     </div>
 </body>
 </html>

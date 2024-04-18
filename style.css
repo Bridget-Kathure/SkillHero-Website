@@ -1,20 +1,25 @@
 
-body{
-    padding: 200px;
-}
-.firstcontainer{
-    background-color: rgb(239, 243, 242);
-    padding: 10px 20px;
-}
+
 .navbar{
    display: flex; 
-   gap: 10%;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 20px;
+   overflow: hidden;
+}
+.navbar a{
+    text-decoration: none;
 }
 .skill{
+    color: red;   
+}
+.firstskill{
     color: red;
+    font-size: larger;
 }
 .hero{
     color: black;
+    font-size: x-large;
 }
 .firstbutton{
     border: solid 2px;
@@ -38,7 +43,7 @@ body{
 .input{
     border: solid 2px;
     padding: 20px 100px;
-    width: 30%;
+    width: 40%;
     border-radius: 40px ;
     background-color: rgb(250, 241, 241);
     border-color: rgb(211, 203, 203);
@@ -54,34 +59,41 @@ body{
 }
 .container{
     display: flex;
-    gap: 10%;
+    gap: 15%;
+    margin-left: 4%;
+    /* justify-content: space-around; */
+    font-size: 30px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.man{
+.image{
     border-radius: 50%;
     object-fit: cover;
+    width: 500px; 
+    height: 500px;
 }
-.footer{
-    color: grey;
-    gap: 500%;
-    width: 30px;
-    height: 30px;
+.skillhero-logos{
+    color: rgb(171, 169, 169);
+    justify-content: space-around;
     display: flex;
+    height: 60px;
+    text-align: justify;
     padding: 30px;
 }
 
-@media only screen and (min-width:280px) and (max-width:480px){
+@media only screen and (min-width:280px) and (max-width:500px){
 
 .firstcontainer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
 }
 .navbar{
-    display: block;
+    display: flex;
+    flex-direction: column;
    }   
-.input{
-    padding: 5px;
-}
 .container{
     display: block;
+    font-size: 20px;
 }
 
 .footer{
@@ -91,14 +103,12 @@ body{
     border: solid 2px;
     border-radius: 20px;
     background-color: white;
-    padding: 10px;
+    padding: -100px;
     color: red;
     
 }
 input{
     border: solid 2px;
-    padding: 10px 50px;
-    width: 30%;
     border-radius: 40px ;
     background-color: rgb(250, 241, 241);
     border-color: rgb(211, 203, 203);
@@ -112,4 +122,83 @@ input{
      margin-left: -100px;
     margin-top: -22px;
 }
+.image{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+.thirdbutton{
+    border-radius: 30px;
+    border-color: rgb(253, 109, 109);
+    padding: 10px;
+    background-color: rgb(243, 94, 94);
+    color: white;
+   
+}
+.skillhero-logos{
+    color: rgb(171, 169, 169);
+    justify-content: space-around;
+    display: block;
+    height: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+
+}
+@media only screen and (min-width:520px) and (max-width:800px){
+    .firstcontainer{
+        display: block;
+        font-size: 5px;
+    }
+    .navbar{
+        display: block;
+       }   
+    .container{
+        display: block;
+    }
+    
+    .footer{
+        display: block;
+    }
+    .firstbutton{
+        border: solid 2px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 10px;
+        color: red;
+        
+    }
+    input{
+        border: solid 2px;
+        padding: 10px 20px;
+        width: 10%;   width:350px; 
+
+        border-radius: 40px ;
+        background-color: rgb(250, 241, 241);
+        border-color: rgb(211, 203, 203);
+    }
+    .thirdbutton{
+        border-radius: 30px;
+        border-color: rgb(253, 109, 109);
+        padding: 10px 10px;
+        background-color: rgb(243, 94, 94);
+        color: white;
+         margin-left: -30px;
+        margin-top: -5px;
+    }
+    .image{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+    .thirdbutton{
+        border-radius: 20px;
+        border-color: rgb(253, 109, 109);
+        padding: 10px;
+        background-color: rgb(243, 94, 94);
+        color: white;
+       
+    }
 }
