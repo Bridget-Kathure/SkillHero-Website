@@ -10,18 +10,18 @@
 .navbar a{
     text-decoration: none;
 }
-.skill{
+.skilltext{
     color: red;   
 }
 .firstskill{
     color: red;
     font-size: larger;
 }
-.hero{
+.herotext{
     color: black;
     font-size: x-large;
 }
-.firstbutton{
+.loginbutton{
     border: solid 2px;
     border-radius: 20px;
     background-color: white;
@@ -29,10 +29,10 @@
     color: red;
     
 }
-.upgrade{
+.text{
     color: grey;
 }
-.secondbutton{
+.joinbutton{
     border: solid 2px;
     border-color: red;
     border-radius: 20px;
@@ -48,7 +48,7 @@
     background-color: rgb(250, 241, 241);
     border-color: rgb(211, 203, 203);
 }
-.thirdbutton{
+.explorebutton{
     border-radius: 30px;
     border-color: rgb(253, 109, 109);
     padding: 20px 20px;
@@ -57,7 +57,7 @@
      margin-left: -100px;
     margin-top: -22px;
 }
-.container{
+.landingpage{
     display: flex;
     gap: 15%;
     margin-left: 4%;
@@ -80,8 +80,7 @@
     padding: 30px;
 }
 
-@media only screen and (min-width:280px) and (max-width:500px){
-
+@media screen and (min-width:280px) and (max-width:375px){
 .firstcontainer{
     display: flex;
     flex-direction: column;
@@ -91,36 +90,29 @@
     display: flex;
     flex-direction: column;
    }   
-.container{
+.landingpage{
     display: block;
-    font-size: 20px;
 }
 
 .footer{
     display: block;
 }
-.firstbutton{
+.skillheroheadline{
+    font-size: 10px;
+
+}
+.loginbutton{
     border: solid 2px;
     border-radius: 20px;
-    background-color: white;
     padding: -100px;
-    color: red;
     
 }
-input{
+.input{
     border: solid 2px;
-    border-radius: 40px ;
-    background-color: rgb(250, 241, 241);
+    border-radius: 30px ;
+    padding: 20px;
+     width: 20%; 
     border-color: rgb(211, 203, 203);
-}
-.thirdbutton{
-    border-radius: 30px;
-    border-color: rgb(253, 109, 109);
-    padding: 10px 10px;
-    background-color: rgb(243, 94, 94);
-    color: white;
-     margin-left: -100px;
-    margin-top: -22px;
 }
 .image{
     border-radius: 50%;
@@ -128,64 +120,57 @@ input{
     width: 100px;
     height: 100px;
 }
-.thirdbutton{
+.explorebutton{
     border-radius: 30px;
-    border-color: rgb(253, 109, 109);
+    margin-left: 20px;
+    margin-top: -5px;
     padding: 10px;
-    background-color: rgb(243, 94, 94);
-    color: white;
    
 }
 .skillhero-logos{
-    color: rgb(171, 169, 169);
     justify-content: space-around;
     display: block;
     height: 30px;
-    text-align: justify;
     padding: 10px;
 }
 
 }
-@media only screen and (min-width:520px) and (max-width:800px){
+@media only screen and (min-width:376px) and (max-width:600px){
     .firstcontainer{
-        display: block;
-        font-size: 5px;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
     }
     .navbar{
-        display: block;
+        display: flex;
+        flex-direction: column;
        }   
-    .container{
+    .landingpage{
         display: block;
     }
     
     .footer{
         display: block;
     }
-    .firstbutton{
+    .skillherocontent{
+        font-size: 30px;
+    }
+    .skillheroheadline{
+        font-size: 20px;
+    
+    }
+    .loginbutton{
         border: solid 2px;
         border-radius: 20px;
-        background-color: white;
-        padding: 10px;
-        color: red;
+        padding: -100px;
         
     }
-    input{
+    .input{
         border: solid 2px;
-        padding: 10px 20px;
-        width: 10%;   width:350px; 
-
-        border-radius: 40px ;
-        background-color: rgb(250, 241, 241);
+        border-radius: 30px ;
+        padding: 20px;
+         width: 30%; 
         border-color: rgb(211, 203, 203);
-    }
-    .thirdbutton{
-        border-radius: 30px;
-        border-color: rgb(253, 109, 109);
-        padding: 10px 10px;
-        background-color: rgb(243, 94, 94);
-        color: white;
-         margin-left: -30px;
-        margin-top: -5px;
     }
     .image{
         border-radius: 50%;
@@ -193,12 +178,77 @@ input{
         width: 100px;
         height: 100px;
     }
-    .thirdbutton{
-        border-radius: 20px;
-        border-color: rgb(253, 109, 109);
+    .explorebutton{
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-top: -5px;
         padding: 10px;
-        background-color: rgb(243, 94, 94);
-        color: white;
        
     }
+    .skillhero-logos{
+        justify-content: space-around;
+        display: block;
+        height: 30px;
+        padding: 10px;
+    }
+    
+}
+
+@media only screen and (min-width:601px) and (max-width:1300px){
+    .firstcontainer{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+       }   
+    .landingpage{
+        display: block;
+    }
+    
+    .footer{
+        display: block;
+    }
+    .skillherocontent{
+        font-size: 50px;
+    }
+    .skillheroheadline{
+        font-size: 30px;
+    
+    }
+    .loginbutton{
+        border: solid 2px;
+        border-radius: 20px;
+        padding: -100px;
+        
+    }
+    .input{
+        border: solid 2px;
+        border-radius: 30px ;
+        padding: 20px;
+         width: 30%; 
+        border-color: rgb(211, 203, 203);
+    }
+    .image{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+    .explorebutton{
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-top: -5px;
+        padding: 10px;
+       
+    }
+    .skillhero-logos{
+        justify-content: space-around;
+        display: block;
+        height: 30px;
+        padding: 10px;
+    }
+    
 }
